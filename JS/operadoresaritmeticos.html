@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+ <meta charset="utf-8">
+ <title>Operadores matemáticos</title>
+ <script type="text/javascript"> 
+ document.write("<p>Fazendo contas !<br />");
+ var x = 1;
+ var y = 2;
+ var soma = x + y;
+ document.write(soma);
+ document.write("<br />");
+ // Resultado: 3
+ var diferenca = x - y;
+ document.write(diferenca);
+ document.write("<br />");
+ // Resultado: -1
+ var multiplicacao = y * 3;
+ document.write(multiplicacao);
+ document.write("<br />");
+ // Resultado: 6
+ var divisao = multiplicacao / 2;
+ document.write(divisao);
+ document.write("<br />");
+ // Resultado: 3
+ var modulo = divisao % 2;
+ document.write(divisao);
+ document.write("<br />");
+ // Resultado: 3
+ // Incremento anterior:
+ // Primeiro incrementa depois retorna
+ // o valor da operação
+ var incrementoAnterior = 2;
+ document.write(++incrementoAnterior);
+ document.write(" -> ");
+ document.write(incrementoAnterior);
+ document.write("<br />");
+ // Resultado: 3 -> 3
+ // Incremento posterior:
+ // Primeiro retorna o valor original
+ // depois incrementa 
+ var incrementoPosterior = 2;
+ document.write(incrementoPosterior++);
+ document.write(" -> ");
+ document.write(incrementoPosterior);
+ document.write("<br />");
+ // Resultado: 2 -> 3
+ // Decremento anterior:
+ // Primeiro decrementa depois retorna
+ // o valor da operação
+ var decrementoAnterior = 2;
+ document.write(--decrementoAnterior);
+ document.write(" -> ");
+ document.write(decrementoAnterior);
+ document.write("<br />");
+ // Resultado: 1 -> 1
+ // Decremento posterior:
+ // Primeiro retorna o valor original
+ // depois decrementa
+ var decrementoPosterior = 2;
+ document.write(decrementoPosterior--);
+ document.write(" -> ");
+ document.write(decrementoPosterior);
+ document.write("<br />");
+ // Resultado: 2 -> 1
+ // Equação sem uso de parênteses:
+ var semParenteses = 2 + 2 * 3;
+ document.write(semParenteses);
+ document.write("<br />");
+ // Resultado: 8
+ // Equação com uso de parênteses:
+ var comParenteses = (2 + 2) * 3;
+ document.write(comParenteses);
+ document.write("<br />");
+ // Resultado: 12
+ // Erro na execução de um cálculo
+ // divisão por zero
+ var valor = 0;
+ var resultado = 4 / valor; 
+ document.write(resultado);
+ document.write("<br />");
+ // Resultado: Infinity
+ document.write("</p>");
+ </script>
+ </head>
+ <body>
+ </body>
+</html>

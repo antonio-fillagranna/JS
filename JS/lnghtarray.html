@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+ <meta charset="utf-8">
+ <title>Acessando elementos de arrays e
+testando length</title>
+ <script type="text/javascript">
+ document.write("<p>");
+
+ // delcara um array
+ // Quando se utiliza este construtor, os elementos
+ // são indexados automaticamente a partir de zero
+ var arrayBom = ["primeiro", "segundo", "terceiro"];
+ // acessa os elementos do array
+ document.write(arrayBom[0]); // primeiro
+ document.write("<br />");
+ document.write(arrayBom[1]); // segundo
+ document.write("<br />");
+ document.write(arrayBom[2]); // terceiro
+ document.write("<br />");
+ // Ao tentar acessar o elemento de um
+ // índice não declarado, recebemos undefined
+ document.write(arrayBom[5]);
+ document.write("<br />");
+ // Resultado: undefined
+ // A propriedade length retorna o
+ // comprimento do array. Para obter o comprimento
+ // ela identifica o maior índice existente no
+ // array e soma um. No caso do array arrayBom,
+ // o maior índice é 2. Portanto ao acessar
+ // arrayBom.length, irá retornar 3, pois 2+1=3
+ document.write(arrayBom.length);
+ document.write("<br />");
+ // Resultado: 3
+ document.write("</p>");
+ </script>
+ </head>
+ <body>
+ </body>
+</html>

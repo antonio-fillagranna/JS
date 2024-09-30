@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+            <title>Obtendo pedaços da string</title>
+                <script type="text/javascript">
+
+                document.write("<p>");
+                var fraseBonita = "Estudar JavaScript é demais!";
+                // explorando o método substr()
+                // lembra-se de que as strings são indexadas
+                // a partir de zero
+                // o primeiro parâmetro é o índice do qual a
+                // pesquisa deve iniciar
+                // o segundo parâmetro é a quantidade de
+                // caracteres a serem extraídos
+                // no exemplo abaixo, busca-se uma string
+                // que inicia no oitavo índice e possui
+                // dez caracteres de comprimento 
+                var testesSubstr = fraseBonita.substr(8, 10)
+                document.write(testesSubstr + "<br />");
+                // Resultado: JavaScript
+                // explorando o método substring()
+                // ele possui a mesma finalidade do substr()
+                // mas faz isto de um jeito diferente
+                // ele recebe o índice inicial e o índice final
+                // como parâmetros
+                // No exemplo, buscamos uma palavra que inicia
+                // no índice oito e termina no índice dezoito
+                var testeSubstring = fraseBonita.substring(8, 18);
+                document.write(testeSubstring + "<br />");
+                // Resultado: JavaScript
+                // Exibe a frase original
+                document.write(fraseBonita);
+                document.write("</p>");
+            </script>
+        </head>
+    <body>
+    </body>
+</html>

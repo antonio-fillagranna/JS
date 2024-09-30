@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <title>Acessando o DOM</title>
+ </head>
+ <body>
+ <!-- um simples parágrafo com nosso
+ tradicional Hello World.
+ note que possui um id -->
+ <p id="paragrafo">Hello World!</p> 
+ <!-- Em páginas Web nas quais queremos acessar objetos
+ do DOM através de código JavaScript, o código fonte
+ JavaScript deve ficar depois do HTML, pois o browser
+ começa a renderizar a página de cima para baixo,
+ então quando o script rodar, os objetos do DOM
+ já estarão criados !
+ Tudo bem, JavaScript junto com HTML é feio,
+ mas quando for necessário, inclua seus scripts
+ sempre antes do fechamento da tag body -->
+ <script type="text/javascript">
+    // Aqui estamos acessando o DOM para
+    // obter o texto do nosso parágrafo
+    // Este comando busca no documento HTML
+    // o elemento que possui id "paragrafo"
+    // e obtém o conteúdo que está entre
+    // sua tag de abertura e fechamento
+    var texto = document.getElementById("paragrafo").innerHTML;
+    alert(texto);
+    // Resultado: Hello World
+    </script>
+    </body>
+   </html>

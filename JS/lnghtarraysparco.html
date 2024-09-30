@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+ <meta charset="utf-8">
+ <title>Array esparso</title>
+ <script type="text/javascript">
+ document.write("<p>");
+ // Declaramos um array vazio
+ var arrayEsparso = [];
+ // Inserimos o primeiro elemento no índice 2 
+ arrayEsparso[2] = "primeiro";
+ // inserimos o segundo elemento no índice 5
+ arrayEsparso[5] = "segundo";
+ // inserimos o terceiro elemento no índice 7
+ arrayEsparso[7] = "terceiro";
+ // Podemos dizer que o array da variável
+ // arrayEsparso é esparso, pois a sequência de
+ // índices dele não corresponde ao padrão do
+ // JavaScript, que inicia de zero e incrementa
+ // de um em um
+ // Para obter o comprimento de um array a propriedade
+ // length identifica o maior índice existente no
+ // array e soma um. No caso do array arrayEsparso,
+ // o maior índice é 7. Portanto ao acessar
+ // arrayEsparso.length, irá retornar 8, pois 7+1=8
+ document.write(arrayEsparso.length);
+ document.write("<br />");
+ document.write(arrayEsparso[1]);
+ document.write("<br />");
+ if (arrayEsparso[1]){
+    document.write("ola")
+ } else {
+ document.write("undfind == 0");
+ }
+ // Resultado: 8
+ document.write("</p>");
+ </script>
+ </head>
+ <body>
+ </body>
+</html>

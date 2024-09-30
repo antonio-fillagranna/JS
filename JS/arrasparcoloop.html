@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+ <meta charset="utf-8">
+ <title>Imprimindo elementos de um array</title>
+ <script type="text/javascript">
+ document.write("<p>");
+ var meuArray = ["um", "dois", "tres", "quatro", "etc"];
+ // Iterando sobre os elementos do array através de um
+ // looping for utilizando a escrita tradicional, com
+ // uma variável contadora incrementada a cada iteração
+ document.write("Iterando com for: <br />");
+ for (var i = 0; i < meuArray.length; i++)
+{
+ // A variável i representa o índice
+ document.write(i + " = ");
+ // Acessa o elemento de meu array no índice i
+ document.write(meuArray[i]);
+ document.write("<br />");
+ // Resultado: o elemento do array no índice i
+ }
+ // Iterando sobre os elementos do array através de um
+ // looping enhanced for. A variável indice (a esquerda
+ // do in) recebe o índice que está sofrendo iteração
+ // no momento, sem necessidade de incrementar
+ // contador algum
+ document.write("Iterando com enhanced for: <br />");
+ for (indice in meuArray){
+ // A variável indice representa o índice
+ document.write(indice + " = ");
+ document.write(meuArray[indice]);
+ document.write("<br />");
+ // Resultado: o elemento do array no índice
+ }
+ document.write("</p>");
+ </script>
+ </head>
+ <body>
+ </body>
+</html>

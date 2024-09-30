@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+ <meta charset="utf-8">
+ <title>Verificando erro ao fazer contas</title>
+ <script type="text/javascript">
+
+ document.write("<p>");
+ var contaLouca = 30 / 0;
+ if (isFinite(contaLouca)){
+ document.write("A conta louca deu certo :-)");
+ } else {
+ document.write("Deu erro na conta louca :-(");
+ }
+ // Resultado: Deu erro na conta louca :-( 
+    document.write("</p>");
+ </script>
+ </head>
+ <body>
+ </body>
+</html>

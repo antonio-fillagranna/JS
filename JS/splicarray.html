@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+ <meta charset="utf-8">
+ <title>Excluindo elementos de um array</title> 
+ <script type="text/javascript">
+    document.write("<p>");
+    // Declara um array
+    var meuArray = ["um", "dois", "tres", "quatro", "etc"]; 
+    // Imprime os elementos do array e seu índice
+    document.write("Imprimindo o array original: <br />");
+    for (indice in meuArray){
+    document.write(indice + " = ");
+    document.write(meuArray[indice]);
+    document.write("; ");
+    }
+    document.write("<br />");
+    // Resultado: 0 = um; 1 = dois; 2 = tres;
+    // 3 = quatro; 4 = etc;
+    // exclui a o terceiro e o quarto elemento
+    // do array e armazena os ítens excluidos
+    // em um novo array dentro da variávvel
+    // excluidos
+    var excluidos = meuArray.splice(2, 2);
+    // Imprime os elementos do array e seu índice
+    // é importantíssimo notar que o método splice
+    // reorganiza os índices do array, ou seja, não 
+    // torna o array esparso
+ document.write("Array após a exclusão: <br />");
+ for (indice in meuArray){
+ document.write(indice + " = ");
+ document.write(meuArray[indice]);
+ document.write("; ");
+ }
+ document.write("<br />");
+ // Resultado: 0 = um; 1 = dois; 2 = etc;
+ // Iterando sobre os ítens excluídos
+ document.write("Ítens excluídos: <br />");
+ for (indice in excluidos){
+ document.write(indice + " = ");
+ document.write(excluidos[indice]);
+ document.write("; ");
+ }
+ document.write("<br />");
+ // Resultado: 0 = tres; 1 = quatro;
+ document.write("</p>");
+ </script>
+ </head>
+ <body>
+ </body>
+</html>
