@@ -1,0 +1,1 @@
+Some basics before i try a js project
