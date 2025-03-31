@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Objetos JavaScript</h1>
+<p>Existem duas maneiras de acessar uma propriedade: objeto.propriedade ou objeto["propriedade"]</p>
+
+<p id="demo"></p>
+
+<script>
+// Criar um Objeto:
+const pessoa = {
+  primeiroNome: "John",
+  ultimoNome: "Doe",
+  id: 5566
+};
+
+// Exibir ultimoNome do Objeto:
+document.getElementById("demo").innerHTML =
+"O último nome é " + pessoa["ultimoNome"];
+</script>
+
+</body>
+</html>
