@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Objetos JavaScript</h2>
+
+<p>Se você acessar um método de objeto sem (), ele retornará a definição da função:</p>
+
+<p id="demo"></p>
+
+<script>
+// Criar um objeto:
+const pessoa = {
+  primeiroNome: "John",
+  ultimoNome: "Doe",
+  id: 5566,
+  nomeCompleto: function() {
+    return this.primeiroNome + " " + this.ultimoNome;
+  }
+};
+
+// Exibir dados do objeto:
+document.getElementById("demo").innerHTML = pessoa.nomeCompleto;
+</script>
+
+</body>
+</html>
