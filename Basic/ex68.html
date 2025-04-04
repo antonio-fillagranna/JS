@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Clique em "Teste" para chamar uma função com argumentos</p>
+
+<button onclick="minhaFuncao('Harry Potter','Mago')">Teste</button>
+
+<p id="demo"></p>
+
+<script>
+function minhaFuncao(nome,profissao) {
+  document.getElementById("demo").innerHTML = "Bem-vindo " + nome + ", o " + profissao + ".";
+}
+</script>
+
+</body>
+</html>
