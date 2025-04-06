@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function minhafuncao(txt) {
+ document.getElementById("demo").innerHTML = txt
+}
+</script>
+</head>
+<body>
+
+<p>Quando você clicar em um dos botões, uma função será chamada. A função exibirá o argumento que é passado para ela.</p>
+
+<form>
+ <input type="button" onclick="minhafuncao('Bom Dia!')" value="Pela Manhã">
+ <input type="button" onclick="minhafuncao('Boa Noite!')" value="À Noite">
+</form>
+
+<p id="demo"></p>
+
+</body>
+</html>
