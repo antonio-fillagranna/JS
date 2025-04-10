@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Funções JavaScript</h1>
+
+<p>Acessar uma função sem () retorna a função e não o resultado da função:</p>
+<p id="demo"></p>
+
+<script>
+function paraCelsius(f) {
+  return (5/9) * (f-32);
+}
+
+let valor = paraCelsius;
+document.getElementById("demo").innerHTML = valor;
+</script>
+
+</body>
+</html>
