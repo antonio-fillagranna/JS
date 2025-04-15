@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Eventos HTML JavaScript</h1>
+<h2>O Atributo onclick</h2>
+
+<p>Clique no botão para exibir a data.</p>
+<button onclick="exibirData()">Que horas são?</button>
+
+<script>
+function exibirData() {
+  document.getElementById("demo").innerHTML = Date();
+}
+</script>
+
+<p id="demo"></p>
+
+</body>
+</html>
