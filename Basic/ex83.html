@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Clique no botão para executar uma pesquisa global (/g) pelas letras "chu" (/chu) em uma string e exibir as correspondências.</p>
+
+<button onclick="minhaFuncao()">Teste</button>
+
+<p id="demo"></p>
+
+<script>
+function minhaFuncao() {
+  var str = "A chuva em chuville chuve até no chuveiro";
+  var res = str.match(/chu/g);
+  document.getElementById("demo").innerHTML = res;
+}
+</script>
+
+</body>
+</html>
